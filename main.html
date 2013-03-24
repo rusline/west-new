@@ -18,38 +18,43 @@ BODY { behavior:url("js/csshover.htc");}
 <script type="text/javascript" src="js/jquery.coockie.js"></script>
 <script type="text/javascript" src="js/animation.js"></script>
 <script type="text/javascript" src="js/core.js"></script>
-
 </head>
 <body>
 <div class="main-container">
 <!-- Content -->
 <div class="content bg bg00">
-	
+
 	<div class="home"><a href="#"></a></div>
-	
+
 	<div class="mayak"><span>&nbsp;</span></div>
-	
+
+	<div class="cloud1"><img src="images/cloud1.png" alt="#" /></div>
+	<div class="cloud2"><img src="images/cloud2.png" alt="#" /></div>
+	<div class="cloud3"><img src="images/cloud3.png" alt="#" /></div>
+
 	<div class="shane"><img src="images/shane.png" alt="#" /></div>
 	<div class="west"><img src="images/west.png" alt="#" /></div>
 	<div class="line"><img src="images/line.png" alt="#" /></div>
 	
+	<img class="traser" src="images/tracer.png" width="397" height="92" alt="#" />
+	
 	<img class="moto1" src="images/moto1.png" alt="#" />
 	<img class="moto2" src="images/moto2.png" alt="#" />
-	
-	
+
+
 	<div class="menu">
 		<a class="menu01" href="prod01.html">WEST</a>
 		<!--<a class="menu01" href="#">ФОТОГАЛЕРЕЯ</a>-->
 		<a class="menu00" href="#">МЕНЮ</a>
 	</div>
-	
-	
+
+
 	<div class="west-box"><img src="images/west_box.png" alt="#" /></div>
-	
+
 	<div class="login-box" style="opacity:1">
 		<div class="title">ВПЕРЕД<br />ЗА СОЛНЦЕМ!</div>
 		<div class="login-form">
-			<div class="login-link"><a href="#">РЕГИСТРАЦИЯ</a> <a href="#">ЗАБЫЛИ ПАРОЛЬ?</a></div>	
+			<div class="login-link"><a href="#">РЕГИСТРАЦИЯ</a> <a href="#">ЗАБЫЛИ ПАРОЛЬ?</a></div>
 			<div class="login-in01"><input type="text" value="ЛОГИН"  /></div>
 			<div class="login-in02"><label for="passwordEnterToSite" class="labelPass">ПАРОЛЬ</label><input name="pass" value="" id="passwordEnterToSite" type="password" /></div>
 			<div class="soc-ico">
@@ -60,10 +65,15 @@ BODY { behavior:url("js/csshover.htc");}
 			<div class="login-b"><a href="#"><img src="images/enter_b2.png" alt="#" /></a></div>
 		</div>
 	</div>
-	
+
 </div>
 <!-- /Content -->
 </div>
 <div class="footer"></div>
+
+<script src="js/jquery.backstretch.js"></script>
+<script>
+     $.backstretch("images/bg.jpg");
+</script>
 </body>
 </html>

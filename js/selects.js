@@ -40,7 +40,14 @@
 				$(this).prev('.sel-list').removeClass('act');
 		});
 		
-	
+		
+		$('.main-container, .rating-box').hover(function(){
+				$('.drop-list').slideUp('fast');
+				$('.sel-list').removeClass('act');
+		});
+		
+				
+		
 
 };
 

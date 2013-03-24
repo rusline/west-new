@@ -20,6 +20,31 @@ for (i in document.images) {
 	$('.login-box').delay(12000).animate({'opacity': '1'},300);
 	
 	
+	function tr1() {
+		$('.traser').delay(9000).animate({'opacity': '1'},300).animate({'marginTop': '130', 'marginLeft': '110', widht: 397, 'opacity': '0'}, 2000)
+		.animate({'marginTop': '0', 'marginLeft': '0', widht: 300, 'opacity': '0'}, tr1);
+	};
+	tr1();
+
+	
+	
+	
+	$('.shane').delay(1500).animate({'opacity': '1'},2000);
+	
+	$(".content").hover(
+		function () {
+			$('div.cloud1').animate({left:1200}, 36000);
+			$('div.cloud2').animate({left:900}, 30000);
+			$('div.cloud3').animate({right:-600}, 25000);
+		},
+		function () {
+			$('div.cloud1').stop();
+			$('div.cloud2').stop();
+			$('div.cloud3').stop();
+		}
+	);
+	
+	
 	if ($.browser.msie  && parseInt($.browser.version, 10) === 8) {
   $('.moto1').css({'width' : '168px', 'top': '280px', 'left': '650px', 'opacity': ''});	
 	$('.moto2').css({'opacity': '', 'left': '0'});
@@ -35,6 +60,22 @@ for (i in document.images) {
 	$('.west-box').delay(12000).animate({'opacity': '1'},300);
 	$('.login-box').delay(12000).animate({'opacity': '1'},300);
 }
+	
+	if ($.browser.msie && $.browser.version == 7) {
+		$(".content").hover(
+		function () {
+			$('div.cloud1').animate({left:0}, 36000);
+			$('div.cloud2').animate({left:0}, 30000);
+			$('div.cloud3').animate({right:0}, 25000);
+		},
+		function () {
+			$('div.cloud1').stop();
+			$('div.cloud2').stop();
+			$('div.cloud3').stop();
+		}
+	);
+	};
+	 
 	
 	
 })
