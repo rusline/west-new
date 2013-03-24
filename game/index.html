@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>TRAIN</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="view/style.css">
+        <script type="text/javascript" src="js/lib/jquery-1.9.0.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </head>
+    <body onload="loader()">
+        <div class="site">
+            <div class="loader">
+                <img style="margin-top: 330px;"src="view/img/priloader.gif">
+            </div>
+            <div class="wrapper">
+                <div class="push" id="push">
+                    <div class="txt">МЕНЮ</div>
+                </div>
+                <div class="zt"></div>
+                <div class="west-ls"></div>
+                <div class="menu" id="menu">
+                    <div class="title">МЕНЮ</div>
+                    <div class="btn1" id="back_game"><div class="txt">ВЕРНУТЬСЯ В ИГРУ</div></div>
+                    <div class="btn2" id="retur-map"><div class="txt">ВЕРНУТЬСЯ В КАРТУ</div></div>
+                    <div class="btn3" id="game_restart"><div class="txt">НАЧАТЬ ЗАНОВО</div></div>
+                    <div class="btn4" id="btn_help"><div class="txt">ПОМОЩЬ</div></div>
+                </div>
+                <div class="history">
+                    <!--<div class="text">Скорый поезд уносит нас навстречу приключениям на запад. 
+                                    Мимо проносятся разнообразные пейзажи, мешающие нам любоваться 
+                                    закатом из окна. Не упускай солнце! Как только оно выглянет,
+                                    спеши сделать снимок, пока солнце вновь не скрылось!</div>-->
+                    <div class="btn1" id="btn_next"><div class="txt">ДАЛЕЕ</div></div>
+                </div>
+                <div class="help">                   
+                    <div class="btn1" id="btn_play"><div class="txt">НАЧАТЬ ИГРУ</div></div>
+                </div>
+                <div class="popup_finish">
+                    <div id="star" class="star0"></div>
+                    <div id="mili" class="mili0"></div>
+                    <div class="mili-max">ВАШ ЛУЧШИЙ РЕЗУЛЬТАТ: <span id="mili-max"></span></div>
+                    <div class="btn1" id="btn_exit"><div class="txt">ЗАВЕРШИТЬ</div></div>
+                    <div class="btn2" id="game_restart2"><div class="txt">НАЧАТЬ ЗАНОВО</div></div>
+                </div>
+                <!-- главный цикл игры -->
+                <canvas id="content" class="content" width="850" height="500">                    
+                </canvas>
+                <!-- главный цикл игры -->
+                <div class="photo"></div>
+            </div>
+            <div class="minzrav"></div>
+        </div>
+        <div style="display: none;">
+            <img id="sky" src="view/img/sky.jpg" />
+            <img id="sun" src="view/img/sun.png" />
+            <img id="layer1" src="view/img/bg_layer1.png" />
+            <img id="layer2" src="view/img/bg_layer2.png" />
+            <img id="layer3" src="view/img/bg_layer3.png" />
+            <img id="layer4" src="view/img/bg_layer4.png" />
+            <img id="finder" src="view/img/finder.png" />
+            <img id="finder_red" src="view/img/finder_red.png" />
+            <img class="objs" id="city1" src="view/img/city1.png" />
+            <img class="objs" id="city2" src="view/img/city2.png" /> 
+            <img class="objs" id="city3" src="view/img/city3.png" /> 
+            <img class="objs" id="city4" src="view/img/city4.png" />
+            <img class="objs" id="city5" src="view/img/city5.png" />
+            <img class="objs" id="station1" src="view/img/station1.png" />
+            <img class="objs" id="station2" src="view/img/station2.png" />
+            <img class="objs" id="station3" src="view/img/station3.png" />
+            <img class="objs" id="train" src="view/img/train.png" />
+            <img class="objs" id="tree1_small" src="view/img/tree1_small.png" />
+            <img class="objs" id="tree2_small" src="view/img/tree2_small.png" />
+            <img class="objs" id="wind_plant_1" src="view/img/wind_plant_1.png" />
+            <img class="objs" id="wind_plant_2" src="view/img/wind_plant_2.png" />
+            <img class="objs" id="lightbox" src="view/img/lightbox.png" />
+            <img class="objs" id="pole" src="view/img/pole.png" />
+            <img class="objs" id="road_pole_small" src="view/img/road_pole_small.png" />
+            <img class="objs" id="house1_small" src="view/img/house1_small.png" />
+            <img class="objs" id="house2_small" src="view/img/house2_small.png" />
+            <img class="objs" id="flat_house2" src="view/img/flat_house2.png" />
+            <img class="objs" id="millhouse_small" src="view/img/millhouse_small.png" />
+            <img class="objs" id="water_tower_small" src="view/img/water_tower_small.png" /> 
+        </div>
+    </body>
+</html>

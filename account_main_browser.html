@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Welcome to ...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+<!--[if IE 6]>
+<script src="js/png.js"></script>
+<script>
+	DD_belatedPNG.fix('div, a, img, *');
+</script>
+<style type="text/css">
+BODY { behavior:url("js/csshover.htc");}
+</style>
+<![endif]-->
+
+<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+
+<script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.6.pack.js"></script>
+<script type="text/javascript" src="fancybox/jquery.fancybox.js"></script>
+<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox.css" media="screen" />
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.zoom').fancybox();
+		
+		$(".lock").click(function () {
+					$(this).toggleClass("off");
+		});
+		
+	});
+</script>
+
+<script type="text/javascript" src="js/core.js"></script>
+
+</head>
+<body>
+<div class="main-container">
+
+<!-- Content -->
+<div class="content account">
+	
+	<div class="home"><a href="#"></a></div>
+		
+	<div class="menu">
+		<a class="menu01" href="#">WEST</a>
+		<a class="menu01" href="#">ФОТОГАЛЕРЕЯ</a>
+		<a class="menu02 act" href="#">ЛИЧНЫЙ КАБИНЕТ</a>
+		<a class="menu00" href="#">МЕНЮ</a>
+	</div>
+	
+	<div class="account-box">
+		
+		<div class="mili"><span>176</span>мили</div>
+		
+		<div class="account-map">
+			<div class="poin00" style="top:35px;left:210px">153</div>
+			<div class="poin00" style="top:105px;left:120px">26</div>
+			<div class="poin01" style="top:35px;left:90px"></div>
+		</div>	
+		
+		<div class="account-info">
+			<div class="avatar"><a href="#"><img src="images/avatar01.jpg" alt="#" /></a></div>
+			<p><span>Георгий Александрович</span> <a href="#">Изменить фотографию</a></p>
+			<div class="lines"><input type="text" value="НИК"  /></div>
+			<div class="lines" style="padding-left:15px"><input type="text" value="ИМЯ"  /></div>
+			<div class="lines" style="padding-left:25px"><input type="text" value="ФАМИЛИЯ"  /></div>
+			<div class="lines" style="padding-left:35px"><input type="text" value="E-MAIL"  /></div>
+			<div class="lines" style="padding-left:45px"><input type="text" value="ТЕЛЕФОН" /></div>
+			<div class="lines" style="padding-left:55px"><span class="pass1"><label for="passwordEnterToSite" class="labelPass">ПАРОЛЬ</label><input name="pass" value="" id="passwordEnterToSite" type="password" /></span></div>
+			<div class="lines" style="padding-left:65px"><span class="pass2"><label for="passwordEnterToSite2" class="labelPass">ПОДТВЕРЖДЕНИЕ ПАРОЛЯ</label><input name="pass" value="" id="passwordEnterToSite2" type="password" /></span></div>
+			<div class="check-box"><input type="checkbox" id="checkbox03" class="checkboxclass" /><label id="label03" for="checkbox03" class="checkboxlabelclass">Получать рассылку по СМС</label></div>
+		</div>
+		
+		<div class="stays-list">
+		
+			<ul>
+				<li>
+					<p>Москва, Арена</p>
+					<div class="elemCont"><img src="images/img01.jpg" width="135" height="100" alt="#" /><a href="images/img01_big.jpg" class="zoom"></a></div>
+					<a class="lock" href="#"></a>
+					<span class="soc"><a class="vk" href="#"></a><a class="ok" href="#"></a><a class="fb" href="#"></a></span>
+				</li>
+				<li>
+					<p>Москва, Арена</p>
+					<div><img src="images/img01.jpg" width="135" height="100" alt="#" /><a href="images/img01_big.jpg" class="zoom"></a></div>
+					<a class="lock" href="#"></a>
+					<span class="soc"><a class="vk" href="#"></a><a class="ok" href="#"></a><a class="fb" href="#"></a></span>
+				</li>
+				<li>
+					<p>Москва, Арена</p>
+					<div><img src="images/img01.jpg" width="135" height="100" alt="#" /><a href="images/img01_big.jpg" class="zoom"></a></div>
+					<a class="lock" href="#"></a>
+					<span class="soc"><a class="vk" href="#"></a><a class="ok" href="#"></a><a class="fb" href="#"></a></span>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="button-box">
+			<span><a href="#"><img src="images/save_b.png" alt="#" /></a></span>
+			<a href="#"><img src="images/exit_b.png" alt="#" /></a>
+			<em><a href="#"><img src="images/kwest_b.png" alt="#" /></a></em>
+		</div>
+				
+			
+	</div>
+	
+</div>
+<!-- /Content -->
+</div>
+<!-- Footer -->
+<div class="footer"></div>
+<!-- /Footer -->
+</body>
+</html>
