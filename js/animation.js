@@ -15,7 +15,7 @@ for (i in document.images) {
 	$('.shane').delay(1500).animate({'opacity': '1'},2000);
 	$('.west').delay(3000).animate({'opacity': '1'},2000);
 	$('.line').delay(4000).animate({'opacity': '1'},2000).animate({'opacity': '0'},500).animate({'opacity': '1'},500);
-	$('.menu').delay(12000).animate({'opacity': '1'},300);
+	$('.home-menu').delay(12000).animate({'opacity': '1'},300);
 	$('.west-box').delay(12000).animate({'opacity': '1'},300);
 	$('.login-box').delay(12000).animate({'opacity': '1'},300);
 	
@@ -25,9 +25,28 @@ for (i in document.images) {
 		.animate({'marginTop': '0', 'marginLeft': '0', widht: 300, 'opacity': '0'}, tr1);
 	};
 	tr1();
-
 	
 	
+	function blicks1() {
+		$('.m01').delay(16000).animate({'backgroundPosition': '10px 0'},100).animate({'backgroundPosition': '15px 0'},100).animate({'backgroundPosition': '20px 0'},100).animate({'backgroundPosition': '25px 0'},100).animate({'backgroundPosition': '30px 0'},100).animate({'backgroundPosition': '35px 0'},100).animate({'backgroundPosition': '40px 0'},100).animate({'backgroundPosition': '45px 0'},100).animate({'backgroundPosition': '50px 0'},100).animate({'backgroundPosition': '55px 0'},100).animate({'backgroundPosition': '60px 0'},100).animate({'backgroundPosition': '65px 0'},100).animate({'backgroundPosition': '70px 0'},100).animate({'backgroundPosition': '75px 0'},100).animate({'backgroundPosition': '80px 0'},100).animate({'backgroundPosition': '150px 0'},100);
+	};
+	blicks1();
+	
+	function blicks2() {
+		$('.m02').delay(17000).animate({'backgroundPosition': '10px 0'},100).animate({'backgroundPosition': '15px 0'},100).animate({'backgroundPosition': '20px 0'},100).animate({'backgroundPosition': '25px 0'},100).animate({'backgroundPosition': '30px 0'},100).animate({'backgroundPosition': '35px 0'},100).animate({'backgroundPosition': '40px 0'},100).animate({'backgroundPosition': '45px 0'},100).animate({'backgroundPosition': '50px 0'},100).animate({'backgroundPosition': '55px 0'},100).animate({'backgroundPosition': '60px 0'},100).animate({'backgroundPosition': '65px 0'},100).animate({'backgroundPosition': '70px 0'},100).animate({'backgroundPosition': '75px 0'},100).animate({'backgroundPosition': '80px 0'},100).animate({'backgroundPosition': '150px 0'},100);
+	};
+	blicks2();
+	
+	
+	function blicks3() {
+		$('.m03').delay(18000).animate({'backgroundPosition': '10px 0'},100).animate({'backgroundPosition': '15px 0'},100).animate({'backgroundPosition': '20px 0'},100).animate({'backgroundPosition': '25px 0'},100).animate({'backgroundPosition': '30px 0'},100).animate({'backgroundPosition': '35px 0'},100).animate({'backgroundPosition': '40px 0'},100).animate({'backgroundPosition': '45px 0'},100).animate({'backgroundPosition': '50px 0'},100).animate({'backgroundPosition': '55px 0'},100).animate({'backgroundPosition': '60px 0'},100).animate({'backgroundPosition': '65px 0'},100).animate({'backgroundPosition': '70px 0'},100).animate({'backgroundPosition': '75px 0'},100).animate({'backgroundPosition': '80px 0'},100).animate({'backgroundPosition': '150px 0'},100);
+	};
+	blicks3();
+		
+	function blicks4() {
+		$('.m04').delay(19000).animate({'backgroundPosition': '10px 0'},100).animate({'backgroundPosition': '15px 0'},100).animate({'backgroundPosition': '20px 0'},100).animate({'backgroundPosition': '25px 0'},100).animate({'backgroundPosition': '30px 0'},100).animate({'backgroundPosition': '35px 0'},100).animate({'backgroundPosition': '40px 0'},100).animate({'backgroundPosition': '45px 0'},100).animate({'backgroundPosition': '50px 0'},100).animate({'backgroundPosition': '55px 0'},100).animate({'backgroundPosition': '60px 0'},100).animate({'backgroundPosition': '65px 0'},100).animate({'backgroundPosition': '70px 0'},100).animate({'backgroundPosition': '75px 0'},100).animate({'backgroundPosition': '80px 0'},100).animate({'backgroundPosition': '150px 0'},100);
+	};
+	blicks4();
 	
 	$('.shane').delay(1500).animate({'opacity': '1'},2000);
 	
@@ -49,7 +68,7 @@ for (i in document.images) {
   $('.moto1').css({'width' : '168px', 'top': '280px', 'left': '650px', 'opacity': ''});	
 	$('.moto2').css({'opacity': '', 'left': '0'});
 	$('.bg').css({'opacity': ''});
-	$('.menu').css({'opacity': ''});
+	$('.home-menu').css({'opacity': ''});
 	$('.west-box').css({'opacity': ''});
 	$('.login-box').css({'opacity': ''});
 } else {
