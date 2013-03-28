@@ -59,6 +59,8 @@ h1{}
 
 .traser{position:absolute;top:380px;left:370px;width:300px;opacity:0;filter: alpha(opacity=0);}
 
+.banner{position:absolute;bottom:0px;left:0px}
+
 .west-box{position:absolute;bottom:0;right:0;opacity:0;filter: alpha(opacity=0);}
 
 .login-box{position:absolute;width:240px;right:175px;top:335px;opacity:0;filter: alpha(opacity=0);}
