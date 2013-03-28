@@ -19,6 +19,11 @@ for (i in document.images) {
 	$('.west-box').delay(12000).animate({'opacity': '1'},300);
 	$('.login-box').delay(12000).animate({'opacity': '1'},300);
 	
+	function banner() {
+		$('#demo4').delay(3000).animate({'width': '0'},500).animate({'width': '200'},500, banner);
+	};
+	banner();
+	
 	
 	function tr1() {
 		$('.traser').delay(9000).animate({'opacity': '1'},300).animate({'marginTop': '130', 'marginLeft': '110', widht: 397, 'opacity': '0'}, 2000)

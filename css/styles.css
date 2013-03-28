@@ -59,7 +59,8 @@ h1{}
 
 .traser{position:absolute;top:380px;left:370px;width:300px;opacity:0;filter: alpha(opacity=0);}
 
-.banner{position:absolute;bottom:0px;left:0px}
+.banner{position:absolute;bottom:0px;left:0px;width:200px;text-align:center}
+.banner img{margin:0 auto}
 
 .west-box{position:absolute;bottom:0;right:0;opacity:0;filter: alpha(opacity=0);}
 

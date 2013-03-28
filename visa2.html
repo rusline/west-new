@@ -17,29 +17,7 @@ BODY { behavior:url("js/csshover.htc");}
 <script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
 <script type="text/javascript" src="js/jquery.coockie.js"></script>
 <script type="text/javascript" src="js/animation.js"></script>
-<script type="text/javascript" src="js/jquery.jrumble.1.3.min.js"></script> 
 <script type="text/javascript" src="js/core.js"></script>
-
-<script>
-$(function(){
-	
-	$('#demo4').jrumble({speed:1, x: 0, y: 0, rotation: 5});
-	
-	var demoStart = function(){
-		$('#demo4').trigger('startRumble');
-		setTimeout(demoStop, 3000);
-	};
-	
-	var demoStop = function(){
-		$('#demo4').trigger('stopRumble');
-		setTimeout(demoStart, 3000);
-	};
-	
-	demoStart();		
-	
-});
-</script>
-
 </head>
 <body>
 <div class="main-container">
