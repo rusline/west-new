@@ -20,6 +20,8 @@ BODY { behavior:url("js/csshover.htc");}
 <script type="text/javascript" src="js/jquery.coockie.js"></script>
 <script type="text/javascript" src="js/core.js"></script>
 
+
+
 </head>
 <body>
 <div class="main-container">
@@ -73,6 +75,18 @@ Westonline.ru обеспечивает конфиденциальность ва
 	</div>
 </div>
 
+
+<script type="text/javascript" src="js/jquery.backstretch.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $.backstretch("images/bg.jpg");
+});
+
+$(window).resize(function() {
+  $.backstretch("images/bg.jpg");
+});
+
+</script>
 
 </body>
 </html>
