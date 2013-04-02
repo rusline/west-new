@@ -297,7 +297,7 @@ h1{}
 .account-info .check-box .checkboxlabelclass{background:url(../images/sprites.png) 0 0 no-repeat;padding-left:24px;margin:0;display: block;font-family: 'Conv_DINPro-Light';font-size:14px;color:#000}
 .account-info .check-box .labelselected{background:url(../images/sprites.png) 0 -75px no-repeat;}
 
-.stays-list{position:absolute;top:270px;left:40px}
+.stays-list{position:absolute;top:250px;left:40px}
 .stays-list ul{margin:0;padding:0;list-style-type:none}
 .stays-list ul li{width:140px;margin:0 12px;float:left}
 .stays-list ul li p{color:#000;font-size:12px;font-family:'Conv_DINPro-Medium';}
@@ -425,7 +425,7 @@ h1{}
 .drop03-list ul li, .drop06-list ul li{float:left;width:24%;height:22px;line-height:22px;color:#969696;font-size:14px;cursor:pointer;text-align:center}
 .drop03-list ul li:hover, .drop06-list ul li:hover{background:url(../images/li_h2.png) center no-repeat;color:#fff}
 
-.button-box{position:absolute;bottom:20px;width:800px;left:50%;margin-left:-400px}
+.button-box{position:absolute;bottom:40px;width:800px;left:50%;margin-left:-400px}
 .button-box span{float:right}
 .button-box em{width:102px;position:absolute;left:50%;margin-left:-51px}
 
@@ -775,3 +775,13 @@ h1{}
 .reg-short-box .reg-b a{float:left;margin-right:10px}
 .reg-short-box .reg-b p{padding:10px 0 0 0;color:#c7151c;font-size:14px;font-family:'Conv_DINPro-Medium';text-transform:uppercase}
 .reg-short-box .reg-b p a{color:#c7151c;font-size:12px;font-family:'Conv_DINPro-Medium';margin-right:2px}
+
+.copyright{position:absolute;bottom:15px;width:550px;right:200px;color:#fff;font-size:13px;text-align:right;font-family:Arial, Helvetica, sans-serif}
+.copyright a{color:#fff}
+
+.copyright2{position:absolute;bottom:10px;width:300px;right:145px;color:#fff;font-size:13px;text-align:right;font-family:Arial, Helvetica, sans-serif}
+
+.help-box{position:absolute;bottom:7px;width:550px;right:200px;color:#5b5b5b;font-size:13px;text-align:right;font-family:Arial, Helvetica, sans-serif}
+.help-box a{color:#5b5b5b}
+
+.help{float:right;width:440px;color:#fff;font-size:13px;padding-top:30px}
