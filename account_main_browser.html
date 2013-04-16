@@ -15,7 +15,8 @@ BODY { behavior:url("js/csshover.htc");}
 <![endif]-->
 
 <script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
-
+<script type="text/javascript" src="js/animation.js"></script>
+<script type="text/javascript" src="js/core.js"></script>
 
 </head>
 <body>
@@ -114,31 +115,14 @@ BODY { behavior:url("js/csshover.htc");}
 <div class="footer"></div>
 <!-- /Footer -->
 
-<script type="text/javascript">
-	$(function() {
-	$(".add-f").click(function(){
-		$('.overlay').fadeIn('fast',function(){
-			$('.friend-box').animate({'top':'50%'},500);
-		});
-	});
-	
-	$(".inf-b a").click(function(){
-		 $('.friend-box').animate({'top':'-500px'},500,function(){
-			$('.overlay').fadeOut('fast');
-		});
-	});
-		
-	});
-</script>
-
 <div class="overlay" style="display:none;"></div>
 <div class="friend-box">
+	<span class="close-f"><a href="#"></a></span>
 	<div class="title">зарабатывай мили</div>
 	<div class="email"><input type="text" value="E-MAIL" /> <a href="#"><img src="images/add_f.png" width="153" height="48" alt="#" /></a></div>
 	<div class="email-txt">
-		<div><span>Кому:</span> username1@mail.com <a href="#"><img src="images/delete.png" alt="#" /></a>, username2578@mail.com <a href="#"><img src="images/delete.png" alt="#" /></a>, 
-username2578@mail.com <a href="#"><img src="images/delete.png" alt="#" /></a></div>
-		<p>Дефолтный тест – приглашалка.</p>
+		<div class="email-to">Кому: <span></span></div>
+		<div class="default-txt">Дефолтный тест – приглашалка.</div>
 	</div>
 	<div class="inf-b"><a href="#"><img src="images/friends_b.png" width="198" height="38" alt="#" /></a></div>
 </div>

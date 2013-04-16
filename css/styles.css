@@ -822,15 +822,17 @@ h1{}
 .etap-right div + div + div + div{margin-left:36px}
 
 .friend-box{position:absolute;background:url(../images/friends_drop.png) no-repeat;width:444px;height:382px;left:50%;top:-500px;margin-left:-222px;margin-top:-240px;z-index:999;}
+.friend-box .close-f a{background:url(../fancybox/fancybox_sprite.png) no-repeat;display:block;height: 36px;position: absolute;right: -18px;top: -18px;width: 36px;}
 .friend-box .title{color:#000;font-size:22px;text-transform:uppercase;font-family: 'Conv_DINPro-Medium';padding:15px 0;text-shadow:0 -1px 1px #fff;text-align:center}
 .friend-box .inf-b{text-align:center}
 .friend-box .email{padding:0 18px}
 .friend-box .email input{background:url(../images/fr_in.png) no-repeat;height:40px;line-height:40px;padding:0 15px;width:220px;color:#a5a5a5;font-size:18px;font-family: 'Conv_DINPro-Medium';border:0;float:left;margin:3px 3px 0 0}
 .friend-box .email a{float:left}
 .friend-box .email-txt{padding:20px 30px;clear:both;font-family: 'Conv_DINPro-Medium';height:180px;font-size:14px}
-.friend-box .email-txt div{border-bottom:1px solid #c8c8c8;padding-bottom:5px;color:#000}
-.friend-box .email-txt div img{vertical-align:middle}
-.friend-box .email-txt div span{color:#969696;font-size:14px}
-.friend-box .email-txt p{color:#969696;padding-top:5px}
+.friend-box .email-txt .email-to{border-bottom:1px solid #c8c8c8;padding-bottom:5px;color:#969696}
+.friend-box .email-txt em{color:#000;font-style:normal}
+.friend-box .email-txt img{vertical-align:middle}
+.friend-box .email-txt span{color:#000;font-size:14px}
+.friend-box .email-txt .default-txt{color:#969696;padding-top:5px;border:0}
 
 

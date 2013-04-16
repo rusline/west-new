@@ -110,6 +110,27 @@
         }
     });
 	
+	//* ------------ *//
+	$(".add-f").click(function(){
+		$('.overlay').fadeIn('fast',function(){
+			$('.friend-box').animate({'top':'50%'},500);
+		});
+	});
+	
+	$(".close-f a").click(function(){
+		 $('.friend-box').animate({'top':'-500px'},500,function(){
+			$('.overlay').fadeOut('fast');
+		});
+	});
+	
+	$('.email a').click(function(){
+			var tx1 = $(".email input").val();
+				$(this).parents('div.friend-box').find('.email-to span').before($(".email-to em:last")).html('<em>' + tx1 + '&nbsp;' + '<a href="#"><img src="images/delete.png" alt="#" /></a>' + ',' + '&nbsp;' + '</em>' );
+				return false;
+		});
+	
+		
+	
 	
 	if( !$('#checkage').length && ($.cookie("is_valid") != '1') ){
 		//document.location.href='index.html';
