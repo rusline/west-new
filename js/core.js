@@ -1,5 +1,5 @@
 ﻿$(document).ready(function(){
-	
+
 	$('input:text').each(function(){
         var txtval = $(this).val();
         $(this).focus(function(){
@@ -15,8 +15,8 @@
             }
         });
     });
-		
-		
+
+
     $("#passwordEnterToSite").prev().text('ПАРОЛЬ');
 		/*  тут привязано одно событие на получение фокуса полю в форме  */
 		$(".login-in02 input, .pass1 input").focus(function(e){
@@ -27,7 +27,7 @@
      clicked.prev().text('');
      }
 		});
-	 
+
 		/* 	тут привязано одно событие на потерю фокуса полем в форме */
 		$(".login-in02 input, .pass1 input").blur(function(e){
 	    var clicked = $(e.target),
@@ -37,8 +37,8 @@
         if(clicked.val()=='') clicked.prev().text('ПАРОЛЬ');
     }
 		});
-	
-	
+
+
     $("#passwordEnterToSite2").prev().text('ПОДТВЕРЖДЕНИЕ ПАРОЛЯ');
 		/*  тут привязано одно событие на получение фокуса полю в форме  */
 		$(".pass2 input").focus(function(e){
@@ -49,7 +49,7 @@
      clicked.prev().text('');
      }
 		});
-	 
+
 		/* 	тут привязано одно событие на потерю фокуса полем в форме */
 		$(".pass2 input").blur(function(e){
 	    var clicked = $(e.target),
@@ -59,49 +59,49 @@
         if(clicked.val()=='') clicked.prev().text('ПОДТВЕРЖДЕНИЕ ПАРОЛЯ');
     }
 		});
-	
-		
-	
-	
+
+
+
+
 	$('div.step-text').eq(6).show();
-	
+
 	$('a.kp').each(function(i, item){
   $(item).bind('click', function(e){
    e.preventDefault();
    $('div.step-text').hide();
-   $('div.step-text').eq(i).show(); 
+   $('div.step-text').eq(i).show();
   })
  })
 
-	
+
 	$('.rules').click(function(e){
 		$('.rules-box').css({'display':'block', 'z-index': '10'});
 		jQuery('.scroll-pane').jScrollPane();
 		e.preventDefault();
 	});
-	
+
 	$('.close').click(function(){
 		$('.recovery-box, visa-box').animate({'opacity':'0'},500,function(){
 			$('.overlay').fadeOut('fast');
 		});
 	});
-	
+
 	$('.close').click(function(){
 		$('.visa-box').css({'display':'none', 'z-index': '-1'});
 	});
-	
+
 	$('.close-rules').click(function(e){
 		$('.rules-box').css({'display':'none', 'z-index': '-1'});
 		e.preventDefault();
 	});
-	
+
 	$(".radioclass").click(function(){
 		 if($(this).is(":checked")){
 			$(".radioselected:not(:checked)").removeClass("radioselected");
 			$(this).next("label").addClass("radioselected");
 	  }
 	});
-	
+
 	$(".checkboxclass").click(function(){
         if($(this).is(":checked")){
             $(this).next("label").addClass("labelselected");
@@ -109,43 +109,46 @@
             $(this).next("label").removeClass("labelselected");
         }
     });
-	
+
 	//* ------------ *//
-	$(".add-f").click(function(){
+	$(".add-f").click(function(e){
+		e.preventDefault();
 		$('.overlay').fadeIn('fast',function(){
 			$('.friend-box').animate({'top':'50%'},500);
 		});
 	});
-	
-	$(".close-f a").click(function(){
-		 $('.friend-box').animate({'top':'-500px'},500,function(){
+
+	$(".close-f a").click(function(e){
+		e.preventDefault();
+		$('.friend-box').animate({'top':'-500px'},500,function(){
 			$('.overlay').fadeOut('fast');
 		});
 	});
-	
-	
-	$('.email a').click(function(){
-			var tx1 = $(".email input").val();
-				$(this).parents('div.friend-box').find('.email-to span').before($(".email-to em:last")).html('<em class="tt">' + tx1 + '&nbsp;' + '<a href="#"><img src="images/delete.png" alt="#" /></a>' + ',' + '&nbsp;' + '</em>' );
-				return false;
-		});
-		
-		 $('.email-to em').live('click', function (){
-      $(this).animate({ opacity: 'hide' }, "slow");
-      return false;
-    });
-	
-		
-	
-	
+
+	$('.email a').click(function(e){
+		e.preventDefault();
+		var tx1 = $(".email input").val();
+		$(this).prev().val('').blur();
+		$(this).parents('div.friend-box').find('.email-to span').before($(".email-to em:last")).html('<em>' + tx1 + '&nbsp;' + '<a href="#"><img src="images/delete.png" alt="#" /></a>' + ',' + '&nbsp;' + '</em>' );
+
+	});
+
+	$('.email-to em').live('click', function (e){
+		e.preventDefault();
+		$(this).animate({ opacity: 'hide' }, "fast", function() {$(this).detach()});
+	})
+
+
+
+
 	if( !$('#checkage').length && ($.cookie("is_valid") != '1') ){
 		//document.location.href='index.html';
 	}
-	
+
 	if( $('#checkage').length && ($.cookie("is_remember") == '1') ){
 		//document.location.href='main.html';
 	}
-	
+
 	$('#checkage').bind('click', function(e){
 		if( $('#checkbox02').attr('checked') != 'checked' ){
 			alert("Извините, к просмотру сайта допускаются только посетители, согласные с правилами");
@@ -180,10 +183,10 @@
 				document.location.href='main.html'
 			}
 		}
-			
+
 	});
-	
-	
+
+
 
 })
 
