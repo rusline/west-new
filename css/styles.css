@@ -281,7 +281,7 @@ h1{}
 .account-map .poin00{background:url(../images/point02.png) no-repeat;width:26px;height:37px;color:#000;font-size:8px;font-family:'Conv_DINPro-Medium';text-align:center;padding-top:6px;position:absolute;cursor:pointer}
 .account-map .poin01{background:url(../images/point01.png) no-repeat;width:26px;height:37px;color:#F00;font-size:8px;font-family:'Conv_DINPro-Medium';text-align:center;padding-top:6px;position:absolute;cursor:pointer}
 
-.mili{position:absolute;top:50px;left:50px;color:#5b5b5b;font-size:37px;font-family:'Conv_DINPro-Medium';text-align:center;width:100px}
+.mili{position:absolute;top:30px;left:50px;color:#5b5b5b;font-size:37px;font-family:'Conv_DINPro-Medium';text-align:center;width:100px}
 .mili span{font-size:76px;font-family:'Conv_DINPro-Bold';display:block;line-height:30px;letter-spacing:-0.1em;margin-left:-20px}
 
 .account-info{position:absolute;width:260px;top:25px;right:70px;}
@@ -297,7 +297,7 @@ h1{}
 .account-info .check-box .checkboxlabelclass{background:url(../images/sprites.png) 0 0 no-repeat;padding-left:24px;margin:0;display: block;font-family: 'Conv_DINPro-Light';font-size:14px;color:#000}
 .account-info .check-box .labelselected{background:url(../images/sprites.png) 0 -75px no-repeat;}
 
-.stays-list{position:absolute;top:250px;left:40px}
+.stays-list{position:absolute;top:260px;left:40px}
 .stays-list ul{margin:0;padding:0;list-style-type:none}
 .stays-list ul li{width:140px;margin:0 12px;float:left}
 .stays-list ul li p{color:#000;font-size:12px;font-family:'Conv_DINPro-Medium';}
@@ -425,7 +425,7 @@ h1{}
 .drop03-list ul li, .drop06-list ul li{float:left;width:24%;height:22px;line-height:22px;color:#969696;font-size:14px;cursor:pointer;text-align:center}
 .drop03-list ul li:hover, .drop06-list ul li:hover{background:url(../images/li_h2.png) center no-repeat;color:#fff}
 
-.button-box{position:absolute;bottom:40px;width:800px;left:50%;margin-left:-400px}
+.button-box{position:absolute;bottom:25px;width:800px;left:50%;margin-left:-400px}
 .button-box span{float:right}
 .button-box em{width:102px;position:absolute;left:50%;margin-left:-51px}
 
@@ -799,4 +799,37 @@ h1{}
 #prewbutton{left:30px;background:url(../images/arr_left.png) top left no-repeat}
 #nextbutton{right:30px;background:url(../images/arr_right.png) top right no-repeat}
 #prewbutton:hover, #nextbutton:hover{opacity:1;}
+
+.friends{position:absolute;top:20px;left:240px}
+.friends p{color:#5b5b5b;font-size:11px;font-family: 'Conv_DINPro-Medium';text-transform:uppercase;padding:4px 0 0 25px;text-shadow:1px 1px 1px #fff}
+.friends p b{font-size:12px}
+.friends p + p{padding:4px 0 0 35px}
+
+.etaps{position:absolute;top:120px;left:55px}
+.etap-left{float:left;width:220px}
+.etap-left div{background:url(../images/pl.png) no-repeat;width:218px;height:26px;line-height:26px;margin-bottom:6px;text-align:center;color:#5b5b5b;font-size:11px;font-family: 'Conv_DINPro-Medium';}
+.etap-left div span{font-family: 'Conv_DINPro-Bold';text-transform:uppercase;float:left;margin-left:12px;color:#5b5b5b;font-size:11px}
+.etap-left div.done {color:#ad172c;font-size:14px;font-family: 'Conv_DINPro-Bold';}
+.etap-left div + div{margin-left:12px}
+.etap-left div + div + div{margin-left:24px}
+.etap-left div + div + div + div{margin-left:36px}
+.etap-right{float:left;width:220px}
+.etap-right div{background:url(../images/pl.png) no-repeat;width:218px;height:26px;line-height:26px;margin-bottom:6px;text-align:center;color:#5b5b5b;font-size:11px;font-family: 'Conv_DINPro-Medium';}
+.etap-right div span{font-family: 'Conv_DINPro-Bold';text-transform:uppercase;float:left;margin-left:12px;color:#5b5b5b;font-size:11px}
+.etap-right div.done {color:#ad172c;font-size:14px;font-family: 'Conv_DINPro-Bold';}
+.etap-right div + div{margin-left:12px}
+.etap-right div + div + div{margin-left:24px}
+.etap-right div + div + div + div{margin-left:36px}
+
+.friend-box{position:absolute;background:url(../images/friends_drop.png) no-repeat;width:444px;height:382px;left:50%;top:-500px;margin-left:-222px;margin-top:-240px;z-index:999;}
+.friend-box .title{color:#000;font-size:22px;text-transform:uppercase;font-family: 'Conv_DINPro-Medium';padding:15px 0;text-shadow:0 -1px 1px #fff;text-align:center}
+.friend-box .inf-b{text-align:center}
+.friend-box .email{padding:0 18px}
+.friend-box .email input{background:url(../images/fr_in.png) no-repeat;height:40px;line-height:40px;padding:0 15px;width:220px;color:#a5a5a5;font-size:18px;font-family: 'Conv_DINPro-Medium';border:0;float:left;margin:3px 3px 0 0}
+.friend-box .email a{float:left}
+.friend-box .email-txt{padding:20px 30px;clear:both;font-family: 'Conv_DINPro-Medium';height:180px;font-size:14px}
+.friend-box .email-txt div{border-bottom:1px solid #c8c8c8;padding-bottom:5px;color:#000}
+.friend-box .email-txt div img{vertical-align:middle}
+.friend-box .email-txt div span{color:#969696;font-size:14px}
+
 

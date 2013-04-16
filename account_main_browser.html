@@ -15,23 +15,7 @@ BODY { behavior:url("js/csshover.htc");}
 <![endif]-->
 
 <script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
-<script type="text/javascript" src="js/animation.js"></script>
-<script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.6.pack.js"></script>
-<script type="text/javascript" src="fancybox/jquery.fancybox.js"></script>
-<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox.css" media="screen" />
 
-<script type="text/javascript">
-	$(document).ready(function() {
-		$('.zoom').fancybox();
-		
-		$(".lock").click(function () {
-					$(this).toggleClass("off");
-		});
-		
-	});
-</script>
-
-<script type="text/javascript" src="js/core.js"></script>
 
 </head>
 <body>
@@ -53,13 +37,28 @@ BODY { behavior:url("js/csshover.htc");}
 		
 	<div class="account-box">
 		
-		<div class="mili"><span>176</span>мили</div>
+		<div class="mili"><span>52</span>мили</div>
 		
-		<div class="account-map">
-			<div class="poin00" style="top:35px;left:210px">153</div>
-			<div class="poin00" style="top:105px;left:120px">26</div>
-			<div class="poin01" style="top:35px;left:90px"></div>
-		</div>	
+		<div class="friends">
+			<a href="#" class="add-f"><img src="images/friends.png" alt="#" /></a>
+			<p>Отправлено приглашений: <b>3</b></p>
+			<p>Зарегистрировалось  друзей: <b>2</b></p>
+		</div>
+		
+		<div class="etaps">
+			<div class="etap-left">
+				<div class="done"><span>Этап 1</span> 15 МИЛЬ</div>
+				<div class="done"><span>Этап 2</span> 37 МИЛЬ</div>
+				<div><span>Этап 3</span> СТАРТ 11 апреля 2013г.</div>
+				<div><span>Этап 4</span> СКОРО</div>
+			</div>
+			<div class="etap-right">
+				<div><span>Этап 5</span> СКОРО</div>
+				<div><span>Этап 6</span> СКОРО</div>
+				<div><span>Этап 7</span> СКОРО</div>
+				<div><span>Этап 8</span> СКОРО</div>
+			</div>
+		</div>
 		
 		<div class="account-info">
 			<div class="avatar"><a href="#"><img src="images/avatar01.jpg" alt="#" /></a></div>
@@ -75,7 +74,6 @@ BODY { behavior:url("js/csshover.htc");}
 		</div>
 		
 		<div class="stays-list">
-		
 			<ul>
 				<li>
 					<p>Москва, Арена</p>
@@ -101,7 +99,6 @@ BODY { behavior:url("js/csshover.htc");}
 		<div class="button-box">
 			<span><a href="#"><img src="images/save_b.png" alt="#" /></a></span>
 			<a href="#"><img src="images/exit_b.png" alt="#" /></a>
-			<em><a href="#"><img src="images/kwest_b.png" alt="#" /></a></em>
 		</div>
 				
 		<div class="help-box">По всем вопросам, связанным с работой сайта, просьба обращаться на <a href="#">info@westonline.ru</a></div>
@@ -116,5 +113,36 @@ BODY { behavior:url("js/csshover.htc");}
 <!-- Footer -->
 <div class="footer"></div>
 <!-- /Footer -->
+
+<script type="text/javascript">
+	$(function() {
+	$(".add-f").click(function(){
+		$('.overlay').fadeIn('fast',function(){
+			$('.friend-box').animate({'top':'50%'},500);
+		});
+	});
+	
+	$(".inf-b a").click(function(){
+		 $('.friend-box').animate({'top':'-500px'},500,function(){
+			$('.overlay').fadeOut('fast');
+		});
+	});
+		
+	});
+</script>
+
+<div class="overlay" style="display:none;"></div>
+<div class="friend-box">
+	<div class="title">зарабатывай мили</div>
+	<div class="email"><input type="text" value="E-MAIL" /> <a href="#"><img src="images/add_f.png" width="153" height="48" alt="#" /></a></div>
+	<div class="email-txt">
+		<div><span>Кому:</span> username1@mail.com <a href="#"><img src="images/delete.png" alt="#" /></a>, username2578@mail.com <a href="#"><img src="images/delete.png" alt="#" /></a>, 
+username2578@mail.com <a href="#"><img src="images/delete.png" alt="#" /></a></div>
+		<p>Дефолтный тест – приглашалка.</p>
+	</div>
+	<div class="inf-b"><a href="#"><img src="images/friends_b.png" width="198" height="38" alt="#" /></a></div>
+</div>
+
+
 </body>
 </html>
