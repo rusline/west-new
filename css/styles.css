@@ -698,7 +698,8 @@ h1{}
 .rating-box{padding:15px 0 0 75px;clear:both}
 *+html .rating-box{padding:0 0 0 75px}
 .rating-box .title{font-family:'Conv_DINPro-Bold';padding-bottom:15px}
-.rating-box .title .user-name{color:#000;font-size:48px;line-height:42px;float:left;font-weight:bold}
+.rating-box .title .user-name{color:#000;font-size:48px;line-height:42px;float:left;font-weight:bold;position:relative;white-space:nowrap;overflow:hidden;max-width:500px;	min-width:320px; width:expression((document.documentElement.clientWidth||document.body.clientWidth)<320?'320px':(document.body.clientWidth > 500? "500px": "auto")); }
+.rating-box .title .user-name span{display:block;width:80px;height:40px;top:0;right:0;position:absolute;background:url(../images/long2.png) right no-repeat}
 .rating-box .title .user-name img{float:left;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;margin-right:10px}
 .rating-box .title em{float:left;background:url(../images/sep.png) no-repeat;width:20px;height:44px;margin:0 10px}
 .rating-box .title .mili-box{color:#ad172c;font-size:36px;float:left;line-height:40px;font-weight:bold}
