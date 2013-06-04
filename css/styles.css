@@ -132,7 +132,7 @@ h1{}
 
 /* Content */
 
-.overlay{background:transparent url(../images/overlay.png) repeat top left;position:absolute;top:0px;bottom:0px;left:0px;right:0px;z-index:998;}
+.overlay{background:transparent url(../images/overlay.png) repeat top left;position:fixed;top:0px;bottom:0px;left:0px;right:0px;z-index:998;}
 .recovery-box{position:absolute;background:url(../images/recovery_bg.png) no-repeat;width:334px;height:144px;left:50%;top:50%;margin-left:-167px;margin-top:-72px;text-align:center;z-index:999}
 .recovery-box p{color:#000;font-size:22px;text-transform:uppercase;font-family: 'Conv_DINPro-Medium';padding:15px 0 10px 0;text-shadow:0 -1px 1px #fff}
 
@@ -260,11 +260,11 @@ h1{}
 .gallery-list ul li p{color:#fff;font-size:12px;font-family:'Conv_DINPro-Medium';}
 .gallery-list ul li div{overflow:hidden;border:2px solid #fff;width:165px;behavior: url(js/pie.htc);position:relative;
 -webkit-border-radius: 10px;
-     -moz-border-radius: 10px; 
+     -moz-border-radius: 10px;
           border-radius: 10px;
 }
 .gallery-list ul li div img{-webkit-border-radius: 7px;
-     -moz-border-radius: 7px; 
+     -moz-border-radius: 7px;
           border-radius: 7px; }
 
 .pagebar {text-align: center;clear:both;padding-top:15px}
@@ -837,3 +837,4 @@ h1{}
 .friend-box .email-txt .default-txt{color:#969696;padding-top:5px;border:0}
 
 
+.win-banner img{top:-224px;left:-30px;position:absolute}
