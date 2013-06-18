@@ -719,6 +719,10 @@ h1{}
 .rating-box .pl01 ul li b{margin-right:3px}
 .rating-box .pl01 ul li span{float:right;color:#ad172c;font-size:14px;width:75px}
 
+.rating-box .pl03{background:url(../images/pl03.png) no-repeat;width:845px;height:200px;margin-left:25px;padding-top:33px;padding-left:70px}
+.rating-box .pl03 img{float:right;margin:0 90px 0 0}
+.rating-box .pl03 div{float:left;width:265px;font-size:14px;line-height:17px;font-family: 'Conv_DINPro-Regular';color:#000}
+
 .win-box{padding:25px 0 0 35px;clear:both}
 *+html .win-box{padding:0 0 0 35px}
 .win-box .ttop{background:url(../images/title00.png) no-repeat;height:39px;line-height:39px;width:826px;text-align:center;color:#000;font-size:18px;margin-bottom:15px;font-family:'Conv_DINPro-Medium';}
